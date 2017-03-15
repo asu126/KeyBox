@@ -46,7 +46,8 @@ public class LoginAction extends ActionSupport implements ServletRequestAware, S
     HttpServletRequest servletRequest;
     Auth auth;
     private final String AUTH_ERROR="Authentication Failed : Login credentials are invalid";
-    private final String AUTH_ERROR_NO_PROFILE="Authentication Failed : There are no profiles assigned to this account";
+    // private final String AUTH_ERROR_NO_PROFILE="Authentication Failed : There are no profiles assigned to this account";
+    private final String AUTH_ERROR_NO_PROFILE="Need to manually check the administrator, please contact suguojun(s00379924) or yuanhongliang(y00347104)";
     //check if otp is enabled
     boolean otpEnabled = ("required".equals(AppConfig.getProperty("oneTimePassword")) || "optional".equals(AppConfig.getProperty("oneTimePassword")));
     String _csrf;
